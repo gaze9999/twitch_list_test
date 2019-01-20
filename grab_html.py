@@ -17,6 +17,8 @@ List_A     = []
 url        = "https://www.twitch.tv/directory"
 contents   = urllib.request.urlopen(url).read()
 soup       = BeautifulSoup(contents, "html.parser")
+#will use Selenium for grab js later
+
 
 #use not yet
 Title      = soup.find_all('div', class_="")
